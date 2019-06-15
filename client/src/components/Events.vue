@@ -56,7 +56,7 @@ export default {
       var self = this;
       this.$router.push({
         name: "AddEvent",
-        query: { start: arg.date, allDay: arg.allDay }
+        query: { start: arg.dateStr, allDay: arg.allDay }
       });
       this.$refs.fullCalendar.$emit('refetch-events')
     }
